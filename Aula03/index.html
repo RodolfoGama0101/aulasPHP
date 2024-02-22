@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 de PHP</title>
+</head>
+<body>
+    <form action="recebeDados.php" method="post">
+
+        <!-- Label Nome e Sobrenome-->
+        <label for="nome">Nome: <br> </label>       
+            <input type="text" name="nome"> <br>
+        <label for="sobrenome">Sobrenome: </label><br>
+            <input type="text" name="sobrenome"> <br>
+        
+        <!-- Label Sexo -->
+        <label>Sexo: </label> <br>
+            <input type="radio" value="M" name="sexo">Masculino <br>
+            <input type="radio" value="F" name="sexo">Feninino <br>
+
+        <!-- Label Carnaval -->
+        <label>No carnaval eu vou...</label> <br>
+            <input type="checkbox" name="carnaval[]" value="Dormir"> Dormir <br>
+            <input type="checkbox" name="carnaval[]" value="Descasar"> Descasar <br>
+            <input type="checkbox" name="carnaval[]" value="Estudar"> Estudar <br>
+            <input type="checkbox" name="carnaval[]" value="Nada"> Não fazer nada <br>
+
+        <select name="cidade">
+            <option value="Jac">Jacareí</option>
+            <option value="SJC">São José dos Campos</option>
+            <option value="SB">Santa Branca</option>
+            <option value="Gua">Guararema</option>
+            <option value="Pinda">Pindamonhangaba</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

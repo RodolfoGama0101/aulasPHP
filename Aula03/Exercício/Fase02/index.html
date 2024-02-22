@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com PHP - Fase 02</title>
+</head>
+<body>
+    <h1>Calculadora com PHP - Fase 02</h1>
+    <form action="calcFase02.php" method="post">
+        <label for="num1">Número A</label> <br>
+            <input type="number" name="num1"> <br>
+
+        <label for="num2">Número B</label> <br>
+            <input type="number" name="num2"> <br>
+
+        <label>Escolha o operador: </label>
+            <input type="radio" value="+" name="operador"> +
+            <input type="radio" value="-" name="operador"> -
+            <input type="radio" value="*" name="operador"> *
+            <input type="radio" value="/" name="operador"> /
+        
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
