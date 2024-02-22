@@ -59,13 +59,24 @@
 
         $frutas = ["Limão", "Uva", "Laranja", "Banana", "Melancia", "Cupuaçu"];
 
-        sort($frutas);
-        shuffle($frutas);
+        // sort($frutas);
+        // shuffle($frutas);
 
-        foreach ($frutas as $chave => $valor) {
-            echo "Frutas [".$chave."] = ".$valor." <br>";
-        }
+        // foreach ($frutas as $chave => $valor) {
+        //     echo "Frutas [".$chave."] = ".$valor." <br>";
+        // }
         
+        print_r($frutas);
+        echo "<p>";
+
+        unset($frutas[5]); // Sempre colocar [índice do vetor]
+        print_r($frutas);
+        
+        echo "<p>";
+        
+        if (in_array("Limão", $frutas)) {
+            echo "Fruta encontrada!";
+        }
     ?>
 </body>
 </html>
