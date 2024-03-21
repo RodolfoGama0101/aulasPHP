@@ -7,10 +7,18 @@
     <title>Exercício 02</title>
 
     <style>
-        td{
+        td {
             border: 3px solid black;
             width: 20px;
             height: 20px;
+        }
+
+        .par {
+            background-color: white;
+        }
+
+        .impar {
+            background-color: black;
         }
     </style>
 </head>
@@ -18,18 +26,43 @@
 <body>
     <?php
 
-    
+
     echo "<table>";
-    for ($i = 0; $i < 8; $i++) {
-        echo "<tr class=''>";
-        for ($j = 0; $j < 8; $j++) {
-            echo "<td class=''></td>";
+    for ($linha = 1; $linha <= 8; $linha++) {
+        echo "<tr>";
+
+        $calcLinha = $linha % 2;
+
+        switch ($calcLinha) {
+            case 1:
+                for ($coluna = 1; $coluna <= 8; $coluna++) {
+                    $calcColuna = $coluna % 2;
+        
+                    if ($calcColuna == 1) {
+                        echo "<td class='par'></td>";
+                    } else if ($calcColuna == 0) {
+                        echo "<td class='impar'></td>";
+                    }
+                }
+            case 0: 
+                for ($coluna = 1; $coluna <= 8; $coluna++) {
+                    $calcColuna = $coluna % 2;
+        
+                    if ($calcColuna == 0) {
+                        echo "<td class='par'></td>";
+                    } else if ($calcColuna == 1) {
+                        echo "<td class='impar'></td>";
+                    }
+                }
         }
+
+        
+
         echo "</tr>";
     }
     echo "</table>";
 
-    
+
 
     ?>
 </body>
