@@ -1,3 +1,7 @@
+<?php 
+    include "checkLogin.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,7 +18,11 @@
 </head>
 
 <body>
+    <?php
+        echo "Bem-vindo " . $user;
+    ?>
 
+    <a href="logout.php">Terminar sessão</a>
 </body>
 
 </html>

@@ -20,7 +20,11 @@ $existe = mysqli_num_rows($result);
 
 if ($existe == 1) {
     echo "<h1>Carregando...</h1>";
+    session_start();
+    $_SESSION["user2"] = $user;
     print("<script> document.location='main.php' </script>");
+} else {
+    echo("<script> document.location='index.html' </script>");
 }
 
 ?>
