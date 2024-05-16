@@ -22,7 +22,11 @@
         echo "Bem-vindo " . $user;
     ?>
 
-    <a href="logout.php">Terminar sessão</a>
+    <br>
+    
+    <a href="logout.php">Terminar sessão</a> <br>
+
+    <a href="mudarSenha.php">Alterar a senha</a>
 </body>
 
 </html>
